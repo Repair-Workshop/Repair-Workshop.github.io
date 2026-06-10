@@ -91,12 +91,14 @@ nav {
 .nav-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: var(--max-w);
   margin: 0 auto;
   padding: .85rem 1.5rem;
-  gap: 1rem;
+  gap: 1.6rem;
 }
+
+.theme-toggle { margin-left: auto; }
 
 .nav-brand {
   font-weight: 700;
