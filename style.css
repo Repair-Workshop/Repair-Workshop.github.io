@@ -253,6 +253,7 @@ nav {
 .pillar-card:nth-child(1)::before { background: var(--blue-mid); }
 .pillar-card:nth-child(2)::before { background: var(--teal); }
 .pillar-card:nth-child(3)::before { background: #8B5CF6; }
+.pillar-card:nth-child(4)::before { background: #F59E0B; }
 
 .pillar-num {
   font-size: .8rem;
@@ -575,6 +576,33 @@ nav {
 
 .tba-icon { font-size: 2rem; margin-bottom: .5rem; }
 .tba-label { font-size: .9rem; font-weight: 600; }
+
+/* ── Program Committee ─────────────────────────────── */
+.pc-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .5rem;
+}
+
+.pc-list li {
+  font-size: .9rem;
+  color: var(--text);
+  padding: .5rem .75rem;
+  background: var(--card-bg);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.pc-list li span {
+  font-size: .78rem;
+  color: var(--gray-400);
+  text-align: right;
+}
 
 /* ── Footer ────────────────────────────────────────── */
 footer {
