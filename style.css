@@ -171,6 +171,10 @@ nav {
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 5.5rem 1.5rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-badge {
@@ -204,10 +208,9 @@ nav {
 }
 
 .hero-title {
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
   font-weight: 700;
-  line-height: 1.18;
-  max-width: 780px;
+  line-height: 1.22;
   margin-bottom: 1.1rem;
   color: #fff;
 }
@@ -220,7 +223,6 @@ nav {
 .hero-tagline {
   font-size: 1.15rem;
   color: rgba(255,255,255,.78);
-  max-width: 620px;
   margin-bottom: 2.2rem;
   font-style: italic;
 }
