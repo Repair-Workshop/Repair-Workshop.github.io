@@ -21,6 +21,7 @@
 
 [data-theme="dark"] .section-title,
 [data-theme="dark"] .pillar-title,
+[data-theme="dark"] .lab-stage-title,
 [data-theme="dark"] .speaker-name,
 [data-theme="dark"] .keynote .speaker-name,
 [data-theme="dark"] .org-name,
@@ -337,6 +338,61 @@ nav {
   line-height: 1.6;
 }
 
+/* ── Living Lab ────────────────────────────────────── */
+.lab-stages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lab-stage {
+  background: var(--card-bg);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 1.35rem 1.2rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.lab-stage::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--teal);
+}
+
+.lab-stage:nth-child(1)::before { background: var(--blue-mid); }
+.lab-stage:nth-child(2)::before { background: var(--teal); }
+.lab-stage:nth-child(3)::before { background: #8B5CF6; }
+.lab-stage:nth-child(4)::before { background: #F59E0B; }
+.lab-stage:nth-child(5)::before { background: #EF4444; }
+
+.lab-stage-num {
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: .4rem;
+}
+
+.lab-stage-title {
+  font-size: .98rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  margin-bottom: .5rem;
+  line-height: 1.3;
+}
+
+.lab-stage-desc {
+  font-size: .88rem;
+  color: var(--gray-700);
+  line-height: 1.55;
+}
+
 /* ── Speakers ──────────────────────────────────────── */
 .speaker-group-label {
   font-size: .85rem;
@@ -476,6 +532,7 @@ nav {
 .sb-poster   { background: var(--teal-light); color: #047866; }
 .sb-break    { background: var(--gray-200); color: var(--gray-700); }
 .sb-talk     { background: #FEF9C3; color: #854D0E; }
+.sb-lab      { background: #FEF3C7; color: #92400E; }
 
 .note-box {
   margin-top: 1.2rem;
