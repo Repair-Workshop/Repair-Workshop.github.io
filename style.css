@@ -684,20 +684,15 @@ nav {
 .cfp-table tbody tr:last-child td { border-bottom: none; }
 .cfp-table tbody tr:hover { background: var(--blue-light); }
 
-.cfp-policy {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
+.cfp-bullets {
+  margin: 0 0 1.2rem 1.25rem;
+  color: var(--gray-700);
+  font-size: 1.025rem;
 }
 
-.cfp-policy li {
-  background: var(--card-bg);
-  border: 1px solid var(--gray-200);
-  border-radius: 6px;
-  padding: .9rem 1rem;
-  color: var(--gray-700);
-  font-size: .95rem;
+.cfp-bullets li {
+  margin: .55rem 0;
+  padding-left: .25rem;
 }
 
 /* ── Organizers ────────────────────────────────────── */
