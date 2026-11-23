@@ -26,6 +26,7 @@
 [data-theme="dark"] .keynote .speaker-name,
 [data-theme="dark"] .org-name,
 [data-theme="dark"] .date-val,
+[data-theme="dark"] .cfp-block-title,
 [data-theme="dark"] .nav-brand { color: #93C5FD; }
 
 [data-theme="dark"] {
@@ -369,6 +370,18 @@ nav {
 .lab-stage:nth-child(3)::before { background: #8B5CF6; }
 .lab-stage:nth-child(4)::before { background: #F59E0B; }
 .lab-stage:nth-child(5)::before { background: #EF4444; }
+.lab-stage:nth-child(6)::before { background: #0E9E8E; }
+
+.tba-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-200);
+  color: var(--gray-400);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
 
 .lab-stage-num {
   font-size: .75rem;
@@ -636,6 +649,55 @@ nav {
   font-weight: 700;
   flex-shrink: 0;
   margin-top: .05rem;
+}
+
+.cfp-block-title {
+  color: var(--blue-dark);
+  font-size: 1.25rem;
+  margin: 2.4rem 0 .7rem;
+}
+
+.cfp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .95rem;
+  background: var(--card-bg);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.cfp-table th,
+.cfp-table td {
+  padding: .85rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.cfp-table thead th {
+  background: var(--blue-dark);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cfp-table tbody tr:last-child td { border-bottom: none; }
+.cfp-table tbody tr:hover { background: var(--blue-light); }
+
+.cfp-policy {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.cfp-policy li {
+  background: var(--card-bg);
+  border: 1px solid var(--gray-200);
+  border-radius: 6px;
+  padding: .9rem 1rem;
+  color: var(--gray-700);
+  font-size: .95rem;
 }
 
 /* ── Organizers ────────────────────────────────────── */
